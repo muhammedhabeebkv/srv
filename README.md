@@ -1,5 +1,6 @@
 # SRV IT HUB
 
+### Live [Live Preview](https://srv-btba.onrender.com)
 ## Table of Contents
 
 - [SRV IT HUB](#srv-it-hub)
@@ -23,7 +24,7 @@
 	 ```
 2. Build the repository:
 	```bash
-	cd srv && cd client && npm run build;
+	cd srv && cd client && npm run build
 	```
 3. And move the output directory to server folder:
 	```bash
