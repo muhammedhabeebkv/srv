@@ -71,7 +71,6 @@ const App = () => {
         pauseOnHover
         theme="light"
       />
-      <ToastContainer />
 
       <main className="w-full h-full flex justify-start items-start p-10 gap-x-10 relative">
         {profileUpdate && user && <ProfileUpdate setProfileUpdate={setProfileUpdate} user={user} setUser={setUser} />}
