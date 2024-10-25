@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fdffff;
+  color: black;
+}
+
+body, #root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+
+li::marker {
+  color: #EEEEEE;
+}
