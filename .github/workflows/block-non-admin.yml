@@ -13,7 +13,7 @@ jobs:
       - name: Check if actor is authorized
         run: |
           echo "Pusher: ${{ github.actor }}"
-          if [ "${{ github.actor }}" != "habeebsrv" ]; then
+          if [ "${{ github.actor }}" != "muhammedhabeebkv" ]; then
             echo "❌ Unauthorized user ${{ github.actor }} tried to push to 'live'."
             exit 1
           fi
