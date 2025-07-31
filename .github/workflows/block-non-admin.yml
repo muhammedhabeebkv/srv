@@ -1,0 +1,19 @@
+# .github/workflows/block-non-admin.yml
+name: Protect Live Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  block-non-admin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if actor is authorized
+        run: |
+          echo "Pusher: ${{ github.actor }}"
+          if [ "${{ github.actor }}" != "muhammedhabeebkv" ]; then
+            echo "❌ Unauthorized user ${{ github.actor }} tried to push to 'live'."
+            exit 1
+          fi
